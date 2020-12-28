@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=14:antialias=true:autohint=true";
-static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
+static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
+static char *font2[] = { "Noto Color Emoji:style=Regular" };
 static int borderpx = 2;
 
 /*
@@ -262,8 +262,9 @@ static Shortcut shortcuts[] = {
     { ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
     { MODKEY,               XK_Page_Up,     kscrollup,      {.i = -1} },
     { MODKEY,               XK_Page_Down,   kscrolldown,    {.i = -1} },
-    { MODKEY,               XK_e,           kscrollup,      {.i =  1} },
-    { MODKEY,               XK_n,           kscrolldown,    {.i =  1} },
+    //{ MODKEY,               XK_e,           kscrollup,      {.i =  1} },
+    //{ MODKEY,               XK_n,           kscrolldown,    {.i =  1} },
+    { ControlMask,          XK_i,           sendbreak,    {.i =  1} },
     { MODKEY,               XK_Up,          kscrollup,      {.i =  1} },
     { MODKEY,               XK_Down,        kscrolldown,    {.i =  1} },
     { TERMMOD,              XK_Up,          zoom,           {.f = +1} },
